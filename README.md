@@ -49,10 +49,11 @@
 
 
 ## Kaban and Presentation
-- [Notion Project Management]()
+- [Notion Project Management](https://fluttering-gram-d49.notion.site/Movies-their-review-and-success-factors-69ba2203501640df9c1a0acdc488532e)
 - [Google Slides Presentation]()
 
 
 ## Credits
 
 - [José Pedro Brandão Linkedin](https://www.linkedin.com/in/jos%C3%A9-pedro-barbosa-brand%C3%A3o-663a172b6/)
+- [Mahshid Khatami]
