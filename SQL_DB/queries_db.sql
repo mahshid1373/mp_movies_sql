@@ -1,7 +1,7 @@
 USE movies_schema;
 
 -- Runtime and Popularity:
--- Hypothesis: There is an optimal movie runtime that correlates with higher popularity and revenue.
+-- Hypothesis 1: Optimal Movie Runtime and Success Metrics
 
 SELECT 
     MIN(runtime) AS min_runtime,
@@ -22,7 +22,8 @@ GROUP BY runtime_range
 ORDER BY runtime_range;
 
 -- Hypothesis 2:
--- Movies belonging to Action Genre tend to have higher revenue compared to Romance Genre.
+-- Revenue Difference Between Action and War Genres
+
 -- Calculate the average revenue for each genre
 SELECT 
     genres AS genre,
@@ -40,7 +41,7 @@ ORDER BY
     average_revenue DESC;
 
 -- Hypothesis 3:
--- Movies with higher budgets raise more expectations so they tend to high ratings from users.
+-- Impact of Budget on User Ratings
 
 SELECT 
     m.title,
