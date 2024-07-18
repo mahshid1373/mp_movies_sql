@@ -12,6 +12,10 @@
 
 - This project explores the relationship between various movie attributes and their outcomes in terms of revenue, popularity, and user ratings. By leveraging a comprehensive movie dataset, we aim to uncover valuable insights that can inform future movie production and marketing strategies.
 
+## Problem Statement
+
+- How can various factours affect the success and the review of movies ?
+
 
 ## Hypotheses and their Visualisation
 
