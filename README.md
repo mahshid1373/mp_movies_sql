@@ -14,7 +14,7 @@
 
 ## Problem Statement
 
-- How can various factours affect the success and the review of movies ?
+- How can various factors affect the success and the review of movies ?
 
 
 ## Hypotheses and their Visualisation
