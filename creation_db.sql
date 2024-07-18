@@ -9,7 +9,7 @@ USE movies_schema;
 -- Drop existing tables if necessary to avoid conflicts
 DROP TABLE IF EXISTS `movies_schema`.`ratings_small`;
 DROP TABLE IF EXISTS `movies_schema`.`movies_metadata`;
-DROP TABLE IF EXISTS `movies_schema`.`links_small`;
+
 
 -- Create `links_small` table
 CREATE TABLE IF NOT EXISTS `movies_schema`.`links_small` (
@@ -22,40 +22,41 @@ CREATE TABLE IF NOT EXISTS `movies_schema`.`links_small` (
 
 -- Create `movies_metadata` table
 CREATE TABLE IF NOT EXISTS `movies_schema`.`movies_metadata` (
-    `adult` TINYINT(1) NULL,
+    `adult` VARCHAR(255),
     `budget` INT NULL,
-    `genres` VARCHAR(45) NULL,
+    `genres` VARCHAR(255) NULL,
     `id` INT NOT NULL,
-    `imdb_id` INT NULL,
+    `imdbId` INT NULL,
     `original_language` VARCHAR(45) NULL,
-    `original_title` VARCHAR(45) NULL,
-    `popularity` VARCHAR(45) NULL,
-    `production_companies` VARCHAR(45) NULL,
-    `production_countries` VARCHAR(45) NULL,
+    `original_title` VARCHAR(255) NULL,
+    `popularity` DECIMAL(6, 1) NULL,
+    `production_companies` VARCHAR(255) NULL,
+    `production_countries` VARCHAR(255) NULL,
     `release_date` DATE NULL,
-    `revenue` INT NULL,
-    `runtime` DECIMAL(5, 2) NULL,
-    `spoken_languages` VARCHAR(45) NULL,
+    `revenue` DECIMAL(18, 1) NULL,
+    `runtime` DECIMAL(5, 1) NULL,
+    `spoken_languages` VARCHAR(255) NULL,
     `status` VARCHAR(45) NULL,
-    `title` VARCHAR(45) NULL,
+    `title` VARCHAR(255) NULL,
     `vote_average` DECIMAL(3, 1) NULL,
-    `vote_count` INT NULL,
+    `vote_count` DECIMAL(6, 1) NULL,
     PRIMARY KEY (`id`),
-    INDEX `imdb_id_idx` (`imdb_id` ASC) VISIBLE,
-    CONSTRAINT `fk_imdb_id`
-        FOREIGN KEY (`imdb_id`)
+    INDEX `imdbId_idx` (`imdbId` ASC) VISIBLE,
+    CONSTRAINT `fk_imdbId`
+        FOREIGN KEY (`imdbId`)
         REFERENCES `movies_schema`.`links_small` (`imdbId`)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
 -- Create `ratings_small` table
+DROP TABLE IF EXISTS `movies_schema`.`ratings_small`;
 CREATE TABLE IF NOT EXISTS `movies_schema`.`ratings_small` (
+	`id2` INT AUTO_INCREMENT PRIMARY KEY, 
     `userId` INT NOT NULL,
     `movieId` INT NOT NULL,
     `rating` DECIMAL(3, 1) NULL,
     `timestamp` INT NULL,
-    PRIMARY KEY (`userId`),
     INDEX `movieId_idx` (`movieId` ASC) VISIBLE,
     CONSTRAINT `fk_movieId`
         FOREIGN KEY (`movieId`)
