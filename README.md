@@ -26,7 +26,7 @@
 - EDA Hypothesis 1
     
 
-    [Data Visualization](EDA/h1.png)
+    ![Data Visualization](EDA/h1.png)
 
     
     ![Data Visualization](EDA/avg_runtime.jpg)
@@ -37,13 +37,13 @@
 
 - EDA Hyphothesis 2
 
-    [Data Visualization](EDA/h2.png)
+    ![Data Visualization](EDA/h2.png)
 
 
 
 - EDA Hypothesis 3
 
-    [Data Visualization](EDA/h3.png)
+    ![Data Visualization](EDA/h3.png)
 
 
 
