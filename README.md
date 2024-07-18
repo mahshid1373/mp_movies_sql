@@ -20,3 +20,33 @@
 
 - 3 Impact of Budget on User Ratings
     - Movies with higher budgets tend to receive higher average ratings from users.
+
+## Visualisations
+
+- EDA Hypothesis 1
+    
+
+    [Data Visualization](EDA/h1.png)
+
+    
+    ![Data Visualization](EDA/avg_runtime.jpg)
+
+    *Small insight about the running time of the films in the database (min, max and avg)*
+
+
+
+- EDA Hyphothesis 2
+
+    [Data Visualization](EDA/h2.png)
+
+
+
+- EDA Hypothesis 3
+
+    [Data Visualization](EDA/h3.png)
+
+
+
+## Data Source
+
+- [Kaggle Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv)
