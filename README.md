@@ -54,7 +54,7 @@
 
 ## Kaban and Presentation
 - [Notion Project Management](https://fluttering-gram-d49.notion.site/Movies-their-review-and-success-factors-69ba2203501640df9c1a0acdc488532e)
-- [Google Slides Presentation]()
+- [Google Slides Presentation](https://docs.google.com/presentation/d/1FNzaZJlkFQhhrS-Q9_-CmzFl6nx28HKSRAa4uZLQZew/edit#slide=id.g2ecf5877061_0_80)
 
 
 ## Credits
